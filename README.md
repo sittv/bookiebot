@@ -3,8 +3,11 @@
 
 BookieBot is a project to create an API and Slackbot to maintain the SITTV inventory.
 
+This repository is merely an implementation of the Slackbot, most of it's core functionality 
+is implemented as an API on the ![SITTV barcodes](https://github.com/sittv/barcodes) server.
+
 ## Uses
-- "Keep the books" i.e. keep track of who has borrowed what and when it's due
+- _Keep the books_ i.e. keep track of who has borrowed what and when it's due
 - Notification system to alert users when they never signed their equipment back in
 - Answer queries about what is due when
 - Maintain a registry of producers
@@ -52,12 +55,17 @@ Eric Londres is now the producer of The Egress.
 
 ### what is due by `<date>`?
 
+Modifiers: __group__
+
 ### when is `<item>` due?
 
 ### who has `<item>`?
 
 ### who is producer of `<production>`?
-
+```
+> @bookie who is the producer of The Egress?
+Eric Londres is the producer of The Ergess.
+```
 ## Search modifiers
 ### after:`<date>`
 | Arguments         | Default           | 
