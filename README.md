@@ -40,7 +40,13 @@ Modifiers: __after__, __before__
 
 ### make group `<name>` `<item>...`
 ```
-> @bookie make group "" 4k camera" "tripod"
+> @bookie make group "news-std" "4k camera" "tripod"
+
+New group created. 
+Alias: "news-std"
+Items:
+    * 4k camera (barcode=...
+    * Tripod (barcode=...
 ```
 
 ### status
